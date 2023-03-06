@@ -12,28 +12,16 @@
     <section class="scores">
       <div class="scores__title-container">
         <h2>Recent Scores</h2>
-        <button>Refresh</button>
+        <button id="refresh-button">Refresh</button>
       </div>
-      <div class="scores__container">
-        <div class="score">
-          Name: 200
-        </div>
-        <div class="score">
-          Name: 200
-        </div>
-        <div class="score">
-          Name: 200
-        </div>
-        <div class="score">
-          Name: 200
-        </div>
+      <div class="scores__container" id="scores__container">
       </div>
     </section>
     <section class="new-score">
       <h2>Add your score</h2>
       <form action="" id="newScore">
-        <input type="text" placeholder="Your name">
-        <input type="number" placeholder="Your score">
+        <input type="text" placeholder="Your name" name="name" required>
+        <input type="number" placeholder="Your score" name="score" required>
         <button>Submit</button>
       </form>
       
