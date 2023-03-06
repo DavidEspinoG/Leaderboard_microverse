@@ -10,7 +10,7 @@ const refreshButton = document.getElementById('refresh-button');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const name = form.elements.name.value;
-  const score = parseInt(form.elements.score.value);
+  const score = parseInt(form.elements.score.value, 10);
   newScore(name, score);
 });
 
