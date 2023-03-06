@@ -22,9 +22,24 @@
   "dependencies": {
     "sass": "^1.58.3"
   },
-    "scripts": {
-      "test" : "npx stylelint '**/*.{css,scss}' && npx eslint . && echo everything-looks-good",
-      "fix" : "npx stylelint '**/*.{css,scss} --fix' && npx eslint . --fix && echo everything-fixed",
-      "start": "webpack serve --mode development"
-    }
-  }
+  "scripts": {
+    "test": "npx stylelint '**/*.{css,scss}' && npx eslint . && echo everything-looks-good",
+    "fix": "npx stylelint '**/*.{css,scss} --fix' && npx eslint . --fix && echo everything-fixed",
+    "start": "webpack serve --mode development"
+  },
+  "name": "leaderboard_microverse",
+  "description": "<a id=\"readme-top\"></a>",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidEspinoG/Leaderboard_microverse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidEspinoG/Leaderboard_microverse/issues"
+  },
+  "homepage": "https://github.com/DavidEspinoG/Leaderboard_microverse#readme"
+}
