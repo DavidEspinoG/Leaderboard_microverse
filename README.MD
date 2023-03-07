@@ -31,12 +31,12 @@
 
 ### Tech Stack <a id="tech-stack"></a>
 
-> HTML & CSS
+> HTML, CSS, JS, Webpack, Sass and LeaderBoard Api
 
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">HTML & CSS</a></li>
+    <li><a href="#">HTML, CSS, JS, Webpack and Sass</a></li>
   </ul>
 </details>
 
@@ -58,7 +58,7 @@
 
 ### Key Features <a id="key-features"></a>
 
-- Show's the best of my work as a software developer
+- Leaderboard to store the score of the players of a given game
 - Responsive web
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -70,7 +70,7 @@
 > Add a link to your deployed project.
 
 
-- [Live Demo Link](https://davidespinog.github.io/portfolio/)
+- [Live Demo Link](https://davidespinog.github.io/Leaderboard_microverse/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,14 +86,14 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-> git clone https://github.com/DavidEspinoG/portfolio.git
+> git clone https://github.com/DavidEspinoG/Leaderboard_microverse.git
 > (you can open it via live server in VS)
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-> git clone https://github.com/DavidEspinoG/portfolio.git
+> git clone https://github.com/DavidEspinoG/Leaderboard_microverse.git
 
 ### Install
 
@@ -110,12 +110,12 @@ To run the project just open it in VS and run liveServer
 
 To run tests, run the following command:
 
-N/A
+npm run test
 ### Deployment
 
 You can deploy this project using:
 
-N/A
+npm run deploy
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,8 +138,7 @@ N/A
 ## 🔭 Future Features <a id="future-features"></a>
 
 
-- More projects are going to be added **[new_feature_1]**
-- A contact form
+- The possibility of delete scores
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

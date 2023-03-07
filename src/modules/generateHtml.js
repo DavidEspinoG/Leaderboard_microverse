@@ -4,7 +4,7 @@ const generateHtml = (obj) => {
   const name = document.createElement('p');
   const score = document.createElement('p');
   name.innerText = obj.user;
-  score.innerText = obj.score;
+  score.innerText = `Score: ${obj.score}`;
   container.append(name, score);
   return container;
 };

@@ -5,7 +5,8 @@ const getScores = async () => {
   const url = `${baseUrl + gameId}/scores/`;
   const res = await fetch(url);
   const data = await res.json();
-  return data.result;
+  const sorted = await data.result.sort((a, b) => b.score - a.score);
+  return sorted;
 };
 
 export default getScores;

@@ -1,5 +1,132 @@
-$main_color: rgb(206, 123, 123);
+$font: 'Rubik', sans-serif;
+$purple: #a459d1;
+$salmon: #f16767;
+$yellow: #ffb84c;
+$sand: #f5eaea;
+$black: rgb(45, 44, 44);
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: $font;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@mixin container {
+  max-width: 90%;
+  width: 35rem;
+  margin: 0 auto;
+}
+
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+@mixin border-styling {
+  border: 1px solid $salmon;
+  border-radius: 1rem;
+}
+
+@mixin flex-space-beetwen {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  @include container();
+}
+
+@media (min-width: 720px) {
+  body {
+    width: 1200px;
+  }
+
+  main {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
 
 h1 {
-  color: $main_color;
+  color: $salmon;
+  font-size: 4rem;
+}
+
+h2 {
+  color: $yellow;
+  font-size: 3rem;
+}
+
+.scores {
+  min-width: 20rem;
+  max-width: 35rem;
+}
+
+.scores__title-container {
+  @include flex-start();
+
+  align-items: center;
+}
+
+.scores__container {
+  @include border-styling();
+
+  padding: 2rem;
+}
+
+.button {
+  color: #fff;
+  background-color: $purple;
+  border: none;
+  width: 7.3rem;
+  height: 3.2rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  font-size: 1.7rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.score {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: $black;
+}
+
+.score p {
+  font-size: 2rem;
+  margin: 0.8rem;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+input {
+  @include border-styling();
+
+  padding: 1rem;
+  width: 30rem;
+  font-size: 1.7rem;
+}
+
+.message p {
+  color: $salmon;
+  font-size: 1.8rem;
 }
